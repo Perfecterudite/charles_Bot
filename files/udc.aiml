@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>I have no answer for that.
+        <random>
+            <li> How may i help you today?</li>
+            <li> How can i help you today?</li>
+            <li> What do you need help with today?</li>
+        </random>
+        <reply>
+            <text>Career</text>
+            <postback>chooseCareer</postback>
+        </reply>
+        <reply>
+            <text>Non-career</text>
+            <postback>chooseNonCareer</postback>
+        </reply>
+        <reply>
+            <text>Nevermind</text>
+            <postback>end</postback>
+        </reply>
+    </template>
+  </category>
+
+<category>
+    <pattern>Hi *</pattern>
+    <template>Hi there, i'm charles, your virtual assistant.
+        <random>
+            <li> How may i help you today?</li>
+            <li> How can i help you today?</li>
+            <li> What do you need help with today?</li>
+        </random>
+        <reply>
+            <text>Career</text>
+            <postback>chooseCareer</postback>
+        </reply>
+        <reply>
+            <text>Non-career</text>
+            <postback>chooseNonCareer</postback>
+        </reply>
+        <reply>
+            <text>Nevermind</text>
+            <postback>end</postback>
+        </reply>
+    </template>
+    
+</category>
+
+
+<category>
+    <pattern>Hey *</pattern>
+    <template>Hi there, i'm charles, your virtual assistant.
+        <random>
+            <li> How may i help you today?</li>
+            <li> How can i help you today?</li>
+            <li> What do you need help with today?</li>
+        </random>
+        <reply>
+            <text>Career</text>
+            <postback>chooseCareer</postback>
+        </reply>
+        <reply>
+            <text>Non-career</text>
+            <postback>chooseNonCareer</postback>
+        </reply>
+        <reply>
+            <text>Nevermind</text>
+            <postback>end</postback>
+        </reply>
+    </template>
+    
+</category>
+
+<category>
+    <pattern>Hello *</pattern>
+    <template>Hi there, i'm charles, your virtual assistant.
+        <random>
+            <li> How may i help you today?</li>
+            <li> How can i help you today?</li>
+            <li> What do you need help with today?</li>
+        </random>
+        <reply>
+            <text>Career</text>
+            <postback>chooseCareer</postback>
+        </reply>
+        <reply>
+            <text>Non-career</text>
+            <postback>chooseNonCareer</postback>
+        </reply>
+        <reply>
+            <text>Nevermind</text>
+            <postback>end</postback>
+        </reply>
+    </template>
+</category>
+
+<category>
+    <pattern>Hi</pattern>
+    <template>Hi there, i'm charles, your virtual assistant.
+        <random>
+            <li> How may i help you today?</li>
+            <li> How can i help you today?</li>
+            <li> What do you need help with today?</li>
+        </random>
+        <reply>
+            <text>Career</text>
+            <postback>chooseCareer</postback>
+        </reply>
+        <reply>
+            <text>Non-career</text>
+            <postback>chooseNonCareer</postback>
+        </reply>
+        <reply>
+            <text>Nevermind</text>
+            <postback>end</postback>
+        </reply>
+    </template>
+</category>
+
+<category>
+    <pattern>Hey</pattern>
+    <template>Hi there, i'm charles, your virtual assistant.
+        <random>
+            <li> How may i help you today?</li>
+            <li> How can i help you today?</li>
+            <li> What do you need help with today?</li>
+        </random>
+        <reply>
+            <text>Career</text>
+            <postback>chooseCareer</postback>
+        </reply>
+        <reply>
+            <text>Non-career</text>
+            <postback>chooseNonCareer</postback>
+        </reply>
+        <reply>
+            <text>Nevermind</text>
+            <postback>end</postback>
+        </reply>
+    </template>
+    
+</category>
+
+<category>
+    <pattern>Hello</pattern>
+    <template>Hi there, i'm charles, your virtual assistant.
+        <random>
+            <li> How may i help you today?</li>
+            <li> How can i help you today?</li>
+            <li> What do you need help with today?</li>
+        </random>
+        <reply>
+            <text>Career</text>
+            <postback>chooseCareer</postback>
+        </reply>
+        <reply>
+            <text>Non-career</text>
+            <postback>chooseNonCareer</postback>
+        </reply>
+        <reply>
+            <text>Nevermind</text>
+            <postback>end</postback>
+        </reply>
+    </template>
+</category>
+
+<category>
+    <pattern>My name is * *</pattern>
+    <template>Hello <star index="1" />
+        <random>
+            <li> How may i help you today?</li>
+            <li> How can i help you today?</li>
+            <li> What do you need help with today?</li>
+        </random>
+        <reply>
+            <text>Career</text>
+            <postback>chooseCareer</postback>
+        </reply>
+        <reply>
+            <text>Non-career</text>
+            <postback>chooseNonCareer</postback>
+        </reply>
+        <reply>
+            <text>Nevermind</text>
+            <postback>end</postback>
+        </reply>
+    </template>
+</category>
+
+<category>
+    <pattern>chooseCareer</pattern>
+    <template>Are you interested in Tech?
+        <reply>
+            <text>Yes</text>
+            <postback>chooseYes</postback>
+        </reply>
+        <reply>
+            <text>No</text>
+            <postback>chooseNo</postback>
+        </reply>
+    </template>
+    
+</category>
+
+<category>
+    <pattern>chooseYes</pattern>
+    <template>
+        There are various tech related careers, 
+        Do you have a Computer Science degree?
+        <reply>
+            <text>Yes</text>
+            <postback>cYes</postback>
+        </reply>
+        <reply>
+            <text>No</text>
+            <postback>cNo</postback>
+        </reply>
+    </template>
+</category>
+
+<category>
+    <pattern>cYes</pattern>
+    <template>Awesome! What are your interest?
+        <reply>
+            <text>Coding</text>
+            <postback>codeYes</postback>
+        </reply>
+        <reply>
+            <text>Non-Coding</text>
+            <postback>codeNO</postback>
+        </reply>
+    </template>
+</category>
+
+<category>
+    <pattern>codeYes</pattern>
+    <template> These jobs requires a Computer Science degree
+        <delay></delay>
+
+        Which of these options would you prefer?
+        Click to know more!
+            <reply>
+                <text>Software Developer</text>
+                <postback>sof</postback>
+            </reply>
+            <reply>
+                <text>Web Developer</text>
+                <postback>web</postback>
+            </reply>
+            <reply>
+                <text>Mobile App Developer</text>
+                <postback>mob</postback>
+            </reply>
+            <reply>
+                <text>Data Engineer</text>
+                <postback>data</postback>
+            </reply>
+            <reply>
+                <text>Game Developer</text>
+                <postback>game</postback>
+            </reply>
+            <reply>
+            <text>Back</text>
+            <postback>cYes</postback>
+        </reply>
+    </template>
+</category>
+
+<category>
+    <pattern>sof</pattern>
+    <template>The Software Developer role create, test, and maintain applications or systems.
+        Looking for this?
+        <reply>
+            <text>Sure!</text>
+            <postback>sure</postback>
+        </reply>
+        <reply>
+            <text>Not feeling it</text>
+            <postback>cNo</postback>
+        </reply>
+    </template>
+</category>
+
+
+<category>
+    <pattern>web</pattern>
+    <template>The Web Developer role builds websites using HTML, CSS, JavaScript, and backend technologies.
+        Looking for this?
+        <reply>
+            <text>Sure!</text>
+            <postback>sure</postback>
+        </reply>
+        <reply>
+            <text>Not feeling it</text>
+            <postback>cNo</postback>
+        </reply>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>mob</pattern>
+    <template>The Mobile App Developer role develops applications for iOS or Android platforms.
+        Looking for this?
+        <reply>
+            <text>Sure!</text>
+            <postback>sure</postback>
+        </reply>
+        <reply>
+            <text>Not feeling it</text>
+            <postback>cNo</postback>
+        </reply>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>data</pattern>
+    <template>The Data Engineer role builds pipelines to collect, process, and store data for analysis.
+        Looking for this?
+        <reply>
+            <text>Sure!</text>
+            <postback>sure</postback>
+        </reply>
+        <reply>
+            <text>Not feeling it</text>
+            <postback>cNo</postback>
+        </reply>
+    </template>
+</category>
+
+
+<category>
+    <pattern>game</pattern>
+    <template>The Game Developer role designs and codes video games using engines like Unity or Unreal Engine.
+        Looking for this?
+        <reply>
+            <text>Sure!</text>
+            <postback>sure</postback>
+        </reply>
+        <reply>
+            <text>Not feeling it</text>
+            <postback>cNo</postback>
+        </reply>
+    </template>
+</category>
+
+
+<category>
+    <pattern>codeNo</pattern>
+    <template>These jobs requires a Computer Science degree
+        <delay></delay>
+
+        Which of these options would you prefer? 
+        Click to know more!
+        <reply>
+            <text>Project Manager</text>
+            <postback>pm</postback>
+        </reply>
+        <reply>
+            <text>Tecnical Writer</text>
+            <postback>tw</postback>
+        </reply>
+        <reply>
+            <text>UI/UX Designer</text>
+            <postback>ud</postback>
+        </reply>
+        <reply>
+            <text>IT Support Specialist</text>
+            <postback>sp</postback>
+        </reply>
+        <reply>
+            <text>Cybersecurity Analyst</text>
+            <postback>ca</postback>
+        </reply>
+        <reply>
+            <text>Back</text>
+            <postback>cYes</postback>
+        </reply>
+    </template>
+</category>
+
+<category>
+    <pattern>pm</pattern>
+    <template>The Project Manaber role oversees technology projects, ensuring they meet deadlines and budgets.
+        Looking for this?
+        <reply>
+            <text>Sure!</text>
+            <postback>sure</postback>
+        </reply>
+        <reply>
+            <text>Not feeling it</text>
+            <postback>cNo</postback>
+        </reply>
+    </template>
+</category>
+
+
+<category>
+    <pattern>tw</pattern>
+    <template>The Technical Writer role creates manuals, guides, and documentations for tech products.
+        Looking for this?
+        <reply>
+            <text>Sure!</text>
+            <postback>sure</postback>
+        </reply>
+        <reply>
+            <text>Not feeling it</text>
+            <postback>cNo</postback>
+        </reply>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>ud</pattern>
+    <template>The UI/UX Designer role designs user interfaces and improves user experiences.
+        Looking for this?
+        <reply>
+            <text>Sure!</text>
+            <postback>sure</postback>
+        </reply>
+        <reply>
+            <text>Not feeling it</text>
+            <postback>cNo</postback>
+        </reply>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>sp</pattern>
+    <template>The IT Support Specialist role troubleshoots and resolves IT-related issues for users.
+        Looking for this?
+        <reply>
+            <text>Sure!</text>
+            <postback>sure</postback>
+        </reply>
+        <reply>
+            <text>Not feeling it</text>
+            <postback>cNo</postback>
+        </reply>
+    </template>
+</category>
+
+
+<category>
+    <pattern>ca</pattern>
+    <template>The Cybersecurity Analyst role monitors and protects systems from threats (minimal coding needed).
+        Looking for this?
+        <reply>
+            <text>Sure!</text>
+            <postback>sure</postback>
+        </reply>
+        <reply>
+            <text>Not feeling it</text>
+            <postback>cNo</postback>
+        </reply>
+    </template>
+</category>
+
+
+
+
+<category>
+    <pattern>Sure</pattern>
+    <template>Congratulations! 
+        You have found a career that fits your preference
+        <delay></delay>
+        Still need help?
+        <reply>
+            <text>Yes!</text>
+            <postback>cYes</postback>
+        </reply>
+        <reply>
+            <text>I'm Good!</text>
+            <postback>end</postback>
+        </reply>
+        </template>
+</category>
+
+<category>
+    <pattern>cNo</pattern>
+    <template>No Problem.
+        Still want info on tech related careers?
+        <reply>
+            <text>Yes</text>
+            <postback>cYes</postback>
+        </reply>
+        <reply>
+            <text>No</text>
+            <postback>chooseNonCareer</postback>
+        </reply>
+    </template>
+</category>
+
+<category>
+    <pattern>ChooseNo</pattern>
+    <template>Contact Student services for more info on Non Tech Careers
+    </template>
+</category>
+
+<category>
+    <pattern>chooseNonCareer</pattern>
+    <template>Visit student services portal for more info.
+        <delay></delay>
+        <random>
+            <li> Need help today with?</li>
+            <li> How can i help you today?</li>
+            <li> What do you need help with today?</li>
+        </random>
+        <reply>
+            <text>Career</text>
+            <postback>chooseCareer</postback>
+        </reply>
+        <reply>
+            <text>Nevermind</text>
+            <postback>end</postback>
+        </reply>
+    </template>
+</category>
+
+
+<category>
+    <pattern>end</pattern>
+    <template>
+        Thank you so much for using our services
+        <delay></delay>
+        Conversation Ended.
+    </template>
+</category>
+
+<category>
+    <pattern>ok</pattern>
+    <template>
+        <random>
+            <li> How may i help you today?</li>
+            <li> How can i help you today?</li>
+            <li> What do you need help with today?</li>
+        </random>
+        <reply>
+            <text>Career</text>
+            <postback>chooseCareer</postback>
+        </reply>
+        <reply>
+            <text>Non-career</text>
+            <postback>chooseNonCareer</postback>
+        </reply>
+        <reply>
+            <text>Nevermind</text>
+            <postback>end</postback>
+        </reply>
+    </template>
+</category>
+
+
+</aiml>
